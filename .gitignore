@@ -1,0 +1,20 @@
+
+# IntelliJ project files
+.idea
+*.iml
+build
+gen### Kotlin template
+# Compiled class file
+*.class
+
+# Gradle
+.gradle
+gradle
+gradlew
+gradlew.bat
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
