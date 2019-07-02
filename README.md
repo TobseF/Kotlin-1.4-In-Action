@@ -1,4 +1,4 @@
-# 📚 Kotlin 1.3 in Action Sources
+# 📚 Kotlin 1.3 in Action [![Kotlin](https://img.shields.io/badge/Kotlin-1.3.40-blue.svg?style=flat&logo=kotlin&logoColor=white)](http://kotlinlang.org)
 
 Source files for my [Kotlin 1.3 in Action](https://slides.com/tobsefritz/kotlin-in-action/) presentation.
 
