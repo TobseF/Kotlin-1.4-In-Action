@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.3.30"
+    kotlin("jvm") version "1.3.40"
     java
 }
 
@@ -17,7 +17,7 @@ dependencies {
     compile(kotlin("main-kts"))
     
     // Coroutines
-    implementation("org.jetbrains.kotlinx","kotlinx-coroutines-core","1.2.0")
+    implementation("org.jetbrains.kotlinx","kotlinx-coroutines-core","1.2.2")
 
     implementation("junit", "junit", "4.12")
 }
