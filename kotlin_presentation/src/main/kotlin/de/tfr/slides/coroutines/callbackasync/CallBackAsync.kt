@@ -1,4 +1,4 @@
-package de.tfr.slides.corutines.callbackasync
+package de.tfr.slides.coroutines.callbackasync
 
 import kotlinx.coroutines.*
 

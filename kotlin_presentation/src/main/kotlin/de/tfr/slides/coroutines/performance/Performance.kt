@@ -1,4 +1,4 @@
-package de.tfr.slides.corutines.performance
+package de.tfr.slides.coroutines.performance
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

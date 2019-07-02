@@ -1,4 +1,4 @@
-package de.tfr.slides.corutines
+package de.tfr.slides.coroutines
 
 import kotlinx.coroutines.*
 

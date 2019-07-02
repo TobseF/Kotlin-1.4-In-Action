@@ -1,4 +1,4 @@
-package de.tfr.slides.corutines.allexamples
+package de.tfr.slides.coroutines.allexamples
 
 import kotlinx.coroutines.*
 import java.util.concurrent.ExecutorService

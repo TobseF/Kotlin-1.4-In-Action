@@ -1,4 +1,4 @@
-package de.tfr.slides.corutines.callback
+package de.tfr.slides.coroutines.callback
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
