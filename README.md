@@ -1,6 +1,6 @@
 # 📚 Kotlin 1.3 in Action [![Kotlin](https://img.shields.io/badge/Kotlin-1.3.40-blue.svg?style=flat&logo=kotlin&logoColor=white)](http://kotlinlang.org)
 
-Source files for my [Kotlin 1.3 in Action](https://slides.com/tobsefritz/kotlin-in-action/) presentation.
+[![Slides](https://img.shields.io/badge/Slides-E0667C.svg?style=flat&logo=slides&logoColor=white)](https://slides.com/tobsefritz) Source files for my [Kotlin 1.3 in Action](https://slides.com/tobsefritz/kotlin-in-action/) presentation.
 
 #### It includes:
  * [Contracts](/kotlin_presentation/src/main/kotlin/de/tfr/slides/contracts/Contracts.kt)
