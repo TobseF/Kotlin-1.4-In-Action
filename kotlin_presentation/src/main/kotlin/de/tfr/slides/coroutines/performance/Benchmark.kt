@@ -2,9 +2,9 @@ package de.tfr.slides.coroutines.performance
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import java.time.Duration
-import java.util.concurrent.atomic.AtomicLong
 import kotlin.concurrent.thread
+import java.util.concurrent.atomic.AtomicLong
+import java.time.Duration
 import kotlin.system.measureTimeMillis
 
 fun main() {
@@ -51,4 +51,3 @@ fun measureTime(block: () -> Unit) {
     val time = Duration.ofMillis(measureTimeMillis(block))
     println("\ntime: ${time.toMinutesPart()}m ${time.toSecondsPart()}s ${time.toMillisPart()}ms")
 }
-
