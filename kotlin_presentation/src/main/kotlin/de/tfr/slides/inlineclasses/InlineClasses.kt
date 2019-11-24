@@ -1,8 +1,8 @@
 package de.tfr.slides.inlineclasses
 
-inline class CM(val number: Double = 1.0){
-        fun toInch() = number * 2.54
-        fun toFeet() = number * 0.0328084
+inline class CM(val number: Double = 1.0) {
+    fun toInch() = number * 2.54
+    fun toFeet() = number * 0.0328084
 
     override fun toString(): String {
         return "$number cm"
@@ -19,12 +19,17 @@ fun main() {
 
 var ropeLength = CM(100.0)
 
-fun cutTheRope(length:CM ){
-    ropeLength = CM(ropeLength.number  + length.number)
-    println("Remaining rope: $length")
+fun cutTheRope(length: CM) {
+    ropeLength = CM(ropeLength.number - length.number)
+    if (ropeLength.number > 0) {
+        println("Remaining rope: $ropeLength")
+    } else {
+        ropeLength = CM(0.0)
+        println("I have no rope")
+    }
 }
 
-fun weeNeedBoxedValue(value: CM?){
-    value?.apply (::println)
+fun weeNeedBoxedValue(value: CM?) {
+    value?.apply(::println)
 }
 
