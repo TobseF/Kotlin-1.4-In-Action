@@ -1,0 +1,34 @@
+@startuml
+skinparam backgroundcolor transparent
+skinparam monochrome reverse
+skinparam shadowing false
+
+
+interface IRectangle {
+  -Int x
+  -Int y
+}
+
+class Rectangle {
+  -Int x
+  -Int y
+}
+
+interface IMoveAble {
+    + move()
+    + add(gameObject: IMoveAble)
+}
+
+interface MoveAble {
+    + move()
+    + add(gameObject: IMoveAble)
+}
+
+
+IMoveAble <|-- MoveAble
+IRectangle <|-- Rectangle
+Rectangle <|-- GameField
+Rectangle <|-- PacMan
+MoveAble <|-- PacMan
+
+@enduml
