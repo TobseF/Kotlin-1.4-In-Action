@@ -2,10 +2,12 @@ package de.tfr.slides.coroutines.performance
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlin.concurrent.thread
-import java.util.concurrent.atomic.AtomicLong
 import java.time.Duration
+import java.util.concurrent.atomic.AtomicLong
+import kotlin.concurrent.thread
 import kotlin.system.measureTimeMillis
+
+const val loopCount = 100_000L
 
 fun main() {
     loopWithThreads()
@@ -17,7 +19,7 @@ fun loopWithThreads() {
     println("🦙🦙🦙🦙🦙🦙🦙🦙🦙🦙")
 
     measureTime {
-        for (i in 1..1_000_000L) {
+        for (i in 1..loopCount) {
             thread(start = true) {
                 c.addAndGet(1).printProgress()
             }
@@ -32,7 +34,7 @@ fun loopWithCoroutine() {
     println("🦙🦙🦙🦙🦙🦙🦙🦙🦙🦙")
 
     measureTime {
-        for (i in 1..1_000_000L)
+        for (i in 1..loopCount)
             GlobalScope.launch {
                 c.addAndGet(1).printProgress()
             }
@@ -42,7 +44,7 @@ fun loopWithCoroutine() {
 
 
 fun Long.printProgress() {
-    if ((this % 100_000L) == 0L) {
+    if ((this % (loopCount / 10)) == 0L) {
         print("🥩")
     }
 }
