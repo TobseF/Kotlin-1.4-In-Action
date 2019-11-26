@@ -34,12 +34,12 @@ fun loopWithCoroutine() {
     println("🦙🦙🦙🦙🦙🦙🦙🦙🦙🦙")
 
     measureTime {
-        for (i in 1..loopCount)
+        for (i in 1..loopCount) {
             GlobalScope.launch {
                 c.addAndGet(1).printProgress()
             }
+        }
     }
-
 }
 
 
