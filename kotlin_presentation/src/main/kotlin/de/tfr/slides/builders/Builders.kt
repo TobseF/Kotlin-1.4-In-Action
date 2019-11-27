@@ -4,10 +4,23 @@ import de.tfr.slides.builders.html.html
 
 
 fun main() {
-    println(result())
+    println(theWorld())
+    println(samplePage())
 }
 
-fun result() =
+fun theWorld() = html {
+    body {
+        h1 { +"🗺 Die Welt" }
+        p { +"Gondor" }
+        p { +"Mordor" }
+        p { +"Eriador" }
+        a(href = "https://en.wikipedia.org/wiki/Minor_places_in_Middle-earth") {
+            +"Middle Earth"
+        }
+    }
+}
+
+fun samplePage() =
     html {
         head {
             title { +"XML encoding with Kotlin" }
