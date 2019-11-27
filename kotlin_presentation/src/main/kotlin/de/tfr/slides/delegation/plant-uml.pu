@@ -5,30 +5,69 @@ skinparam shadowing false
 
 
 interface IRectangle {
-  -Int x
-  -Int y
+  -Int width
+  -Int height
 }
 
 class Rectangle {
-  -Int x
-  -Int y
+  -Int width
+  -Int height
 }
 
-interface IMoveAble {
+interface IMoveable {
     + move()
     + add(gameObject: IMoveAble)
 }
 
-interface MoveAble {
+class Moveable {
     + move()
     + add(gameObject: IMoveAble)
 }
 
 
-IMoveAble <|-- MoveAble
+IMoveable <|-- Moveable
 IRectangle <|-- Rectangle
 Rectangle <|-- GameField
 Rectangle <|-- PacMan
-MoveAble <|-- PacMan
+Moveable <|-- PacMan
+
+@enduml
+
+
+
+@startuml
+skinparam backgroundcolor transparent
+skinparam monochrome reverse
+skinparam shadowing false
+
+class Rectangle {
+  -Int width
+  -Int height
+}
+
+Rectangle <|-- GameField
+
+@enduml
+
+
+
+@startuml
+skinparam backgroundcolor transparent
+skinparam monochrome reverse
+skinparam shadowing false
+
+
+interface IRectangle {
+  -Int width
+  -Int height
+}
+
+class Rectangle {
+  -Int width
+  -Int height
+}
+
+IRectangle <|-- GameField
+Rectangle <-- GameField : delegate
 
 @enduml
