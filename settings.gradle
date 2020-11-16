@@ -1,13 +1,3 @@
-pluginManagement {
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id == "kotlin2js") {
-                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${requested.version}")
-            }
-        }
-    }
-}
-rootProject.name = 'kotlin presentation'
-include 'kotlin_presentation'
-findProject(':kotlin_presentation')?.name = 'kotlin'
+
+rootProject.name = "Kotlin-kotlin_presentation"
 

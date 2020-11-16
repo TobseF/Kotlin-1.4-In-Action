@@ -9,7 +9,6 @@ gen### Kotlin template
 
 # Gradle
 .gradle
-gradle
 gradlew
 gradlew.bat
 
