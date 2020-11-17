@@ -11,6 +11,7 @@
    (Kotlin & Java side by side)
  * [Kotlin Gradle DSL](/build.gradle.kts)  
    (Used to configure this module)
+ * [Sealed Classes](/src/main/kotlin/de/tfr/slides/sealed_classes)
  * [Script Files](/src/main/kotlin-script)
  * [Type Alias](/src/main/kotlin/de/tfr/slides/typealias)
  * [Unsigned Int](/src/main/kotlin/de/tfr/slides/unsignedint/UnsignedInt.kt)
