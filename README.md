@@ -5,6 +5,7 @@
 ### Included Topics
  * [Contracts](/src/main/kotlin/de/tfr/slides/contracts/Contracts.kt)
  * [Coroutines](/src/main/kotlin/de/tfr/slides/coroutines)
+ * [Functional Interfaces](/src/main/kotlin/de/tfr/slides/functional_interfaces)
  * [Inline Classes](/src/main/kotlin/de/tfr/slides/inlineclasses)
  * [Interoperabel](/src/main/kotlin/de/tfr/slides/interoperabel)  
    (Kotlin & Java side by side)
